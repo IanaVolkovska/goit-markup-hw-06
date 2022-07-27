@@ -615,17 +615,22 @@ display: flex;
 }
 .social-icons {
     text-decoration: none;
-    fill: var(--icon-color);
+    fill: currentColor;
     width: 44px;
         height: 44px;
         border-radius: 50%;
         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-icons:focus,
+.social-icons:hover {
+    fill: currentColor;
 }
 .team-icons {
     margin-right: 10px;
     text-decoration: none;
 }
 .team-icons:last-child {
+
 margin-right: 0px;
 }
 .social-link {
@@ -636,7 +641,7 @@ margin-right: 0px;
     height: 44px;
     border-radius: 50%;
     padding: 12px;
-    fill: var(--icon-color);
+    color: var(--icon-color);
     transition: border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -646,7 +651,7 @@ margin-right: 0px;
 .team-icons .link:hover {
     border-radius: 50%;
     background-color: #2196F3;
-    fill: currentColor;  
+    color: var(--accent-text-color);  
 }
 
 /*Clients-section*/
